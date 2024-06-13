@@ -1,0 +1,68 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo 2022 - Actualidad",
+    title: "Principal Frontend Developer",
+    company: "Niubiz",
+    description:
+      "Encargado del área de Frontend con experiencia en la estimación y coordinación de tareas, así como en la gestión y mitigación de posibles impactos en los tiempos del proyecto. Responsable del desarrollo y ejecución de las tareas, asegurando el cumplimiento de todos los lineamientos establecidos.",
+    link: "https://www.niubizenlinea.com.pe/",
+  },
+  {
+    date: "Julio 2021",
+    title: "Principal Frontend Developer",
+    company: "Grupo Tawa",
+    description:
+      "Desarrollo del sistema de gestión interno de tawa, optimizado para soportar gran cantidad de datos (500,000 registros a +), módulo de creación de reportes dinámicos, gestión de puntos de ventas, etc.",
+    link:"https://allin.grupotawa.com/"
+    },
+    {
+    date: "Enero 2019",
+    title: "Frontend Developer",
+    company: "Prestamype",
+    description:
+      "Desarrollo junto al equipo de front-end en la reestructuración y remodelación de la parte pública de la web y desarrollo de un nuevo producto llamado factoring; desarrollo de componente en vue para el reconocimiento de DNI Azul, Captura de Foto y Reconocimiento de Texto utilizando OpenCV.js y Vue",
+    link:"https://www.prestamype.com/"
+    },
+    {
+    date: "Diciembre 2017",
+    title: "Frontend Developer",
+    company: "VML",
+    description:
+      "Desarrollo de diversas web promocionales front y back para grandes empresas, como izipay, universidad del pacífico, movistar, etc.",
+    link:"https://www.wpp.com/en/companies/wunderman-thompson"
+    },
+    {
+    date: "Julio 2015",
+    title: "Frontend Developer",
+    company: "PUCP – Universidad Católica del Perú",
+    description:
+      "Maquetación e implementación de nuevas funcionalidades para el sitio institucional de la universidad.",
+    link:"https://www.pucp.edu.pe/",
+    technology: 'jquery'
+    },
+    {
+    date: "Marzo 2015",
+    title: "Frontend Developer",
+    company: "Burns The Agency",
+    description:
+      "Maquetación e implementación nuevas páginas web promocionales interactivas,de nuevos clientes de grandes empresas como plaza vea, tottus, etc",
+    link:"https://www.burnstheagency.com/",
+    technology: 'jquery'
+    },
+
+    
+
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

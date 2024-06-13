@@ -1,0 +1,54 @@
+---
+const personalImageAlt = "Diego Rodrigo"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import GitHub from "@/components/icons/GitHub.astro"
+import Cv from "@/components/icons/cv.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16 dark:block hidden"
+      src="/linkedin.webp"
+      alt={personalImageAlt}
+    />
+    <img
+    class="rounded-full shadow-lg size-16 dark:hidden block"
+    src="/linkedinblue.jpg"
+    alt={personalImageAlt}
+  />
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Diego
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-500 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +10 años de experiencia. <strong
+      >Web UI Developer</strong
+    > de Lima, Perú. Especializado en el desarrollo y mantenimiento de grandes proyectos.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:drsamame@gmail.com">
+      <MailIcon class="size-4" />
+      Contacto
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/diego-rodrigo-salazar-505a7588/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/drsamame">
+      <GitHub class="size-4" />
+      Github
+    </SocialPill>
+    <SocialPill download="Diego_Samame_salazar_CV.docx" href="/projects/Diego_Samame_salazar_CV.docx">
+      <Cv class="size-4" />
+      Descargar CV
+    </SocialPill>
+  </nav>
+</div>
